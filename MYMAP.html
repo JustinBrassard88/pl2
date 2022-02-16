@@ -33,7 +33,7 @@
 
   const view = new MapView({
     map: map,
-    center: [43.876613,-79.722179], //Longitude, latitude
+    center: [-79.722179, 43.876613], //Longitude, latitude 
     zoom: 13,
     container: "viewDiv"
  });
@@ -43,8 +43,8 @@
 
  const point = { //Create a point
     type: "point",
-    longitude: 43.876613,
-    latitude: -79.722179
+    longitude: -79.722179,
+    latitude: 43.876613
  };
  const simpleMarkerSymbol = {
     type: "simple-marker",
@@ -66,10 +66,10 @@
  const polygon = {
     type: "polygon",
     rings: [
-        [43.848800, -79.695960], //Longitude, latitude
-        [43.891552, -79.754549], //Longitude, latitude
-        [43.906041, -79.728317], //Longitude, latitude
-        [43.849757, -79.694837]  //Longitude, latitude
+        [-79.695960, 43.848800], //Longitude, latitude
+        [-79.754549, 43.891552], //Longitude, latitude
+        [-79.728317, 43.906041], //Longitude, latitude
+        [-79.694837, 43.849757]  //Longitude, latitude
         
     ]
  };
