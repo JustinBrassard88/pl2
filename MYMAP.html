@@ -54,23 +54,10 @@
         width: 1
     }
  };
-    
- const popupTemplate = {
-    title: "{Name}",
-    content: "{Description}"
- }
- const attributes = {
-    Name: "My Neighborhood",
-    Description: "This Point represnts the neighborhood that I live in. This Part of town is considered the 'North Hill'. I have lived int his neighborhood the last 10 years of my life. previously to this, I lived in an area called the 'South Hill' which is the house I grew up in as a kid."
- }
-
+   
  const pointGraphic = new Graphic({
     geometry: point,
     symbol: simpleMarkerSymbol
-   
-   
-    attributes: attributes,
-    popupTemplate: popupTemplate
    
  });
  graphicsLayer.add(pointGraphic);
