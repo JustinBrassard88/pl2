@@ -43,8 +43,8 @@
 
  const point = { //Create a point
     type: "point",
-    longitude: -118.80657463861,
-    latitude: 34.0005930608889
+    longitude: 43.876613,
+    latitude: -79.722179
  };
  const simpleMarkerSymbol = {
     type: "simple-marker",
@@ -61,26 +61,6 @@
  });
  graphicsLayer.add(pointGraphic);
 
-    // Create a line geometry
- const polyline = {
-    type: "polyline",
-    paths: [
-        [-118.821527826096, 34.0139576938577], //Longitude, latitude
-        [-118.814893761649, 34.0080602407843], //Longitude, latitude
-        [-118.808878330345, 34.0016642996246]  //Longitude, latitude
-    ]
- };
- const simpleLineSymbol = {
-    type: "simple-line",
-    color: [226, 119, 40], // Orange
-    width: 2
- };
-
- const polylineGraphic = new Graphic({
-    geometry: polyline,
-    symbol: simpleLineSymbol
- });
- graphicsLayer.add(polylineGraphic);
 
  // Create a polygon geometry
  const polygon = {
@@ -108,8 +88,8 @@
     content: "{Description}"
  }
  const attributes = {
-    Name: "Graphic",
-    Description: "I am a polygon"
+    Name: "Bolton, ontario",
+    Description: "This is the town where I grew up. I still currently live here. It is located between Vaughan and Brampton and as can be seen by the shape of this polygo, it has a wedge like shape."
  }
 
  const polygonGraphic = new Graphic({
