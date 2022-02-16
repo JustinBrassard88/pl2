@@ -41,26 +41,6 @@
  const graphicsLayer = new GraphicsLayer();
  map.add(graphicsLayer);
 
- const point = { //Create a point
-    type: "point",
-    longitude: -79.746107,
-    latitude: 43.890203
- };
- const simpleMarkerSymbol = {
-    type: "simple-marker",
-    color: [79, 121, 66],  // Orange
-    outline: {
-        color: [0,100,0], // White
-        width: 1
-    }
- };
-   
- const pointGraphic = new Graphic({
-    geometry: point,
-    symbol: simpleMarkerSymbol
-   
- });
- graphicsLayer.add(pointGraphic);
 
 
  // Create a polygon geometry
@@ -102,6 +82,28 @@
 
  });
  graphicsLayer.add(polygonGraphic);
+    
+    
+ const point = { //Create a point
+    type: "point",
+    longitude: -79.746107,
+    latitude: 43.890203
+ };
+ const simpleMarkerSymbol = {
+    type: "simple-marker",
+    color: [79, 121, 66],  // Orange
+    outline: {
+        color: [0,100,0], // White
+        width: 1
+    }
+ };
+   
+ const pointGraphic = new Graphic({
+    geometry: point,
+    symbol: simpleMarkerSymbol
+   
+ });
+ graphicsLayer.add(pointGraphic);
 
  });
 </script>
