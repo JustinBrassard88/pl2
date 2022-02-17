@@ -97,10 +97,22 @@
         width: 1
     }
  };
+    
+ const popupTemplate = {
+    title: "{Name}",
+    content: "{Description}"
+ }
+ const attributes = {
+    Name: "My Neighborhood",
+    Description: "This is the neighborhood I currently live in. I have been in this neightborhood on the North side of Bolton for the last 10 years of my life. Previously to this, I lived on the South side."
+ }
    
  const pointGraphic = new Graphic({
     geometry: point,
-    symbol: simpleMarkerSymbol
+    symbol: simpleMarkerSymbol,
+   
+    attributes: attributes,
+    popupTemplate: popupTemplate
    
  });
  graphicsLayer.add(pointGraphic);
